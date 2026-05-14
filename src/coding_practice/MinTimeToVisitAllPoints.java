@@ -1,4 +1,16 @@
 class MinTimeToVisitAllPoints {
+    public void method2()
+    {
+        int[][] ar = {{1, 1}, {3, 4}, {-1, 0}};
+        System.out.println("Length of array="+ar.length);
+        int n=ar.length;
+        int totalTime=0;
+        for(int i=1;i<n;i++)
+        {
+            totalTime+=Math.max(Math.abs(ar[i][0]-ar[i-1][0]), Math.abs(ar[i][1]-ar[i-1][1]));
+        }
+        System.out.println("MinTimeToVisitAllPoints="+totalTime);
+    }
     public static void main(String[] args) {
         
          //MinTimeToVisitAllPoints - leetcode 1266
