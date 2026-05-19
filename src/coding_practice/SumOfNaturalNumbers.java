@@ -4,9 +4,9 @@ public class SumOfNaturalNumbers {
     
     public static int sumOfNaturalNumbers(int n){
       
-      if(n==0)
+      if(n==1)
       {
-        return 0;
+        return 1;
       }
       return n + sumOfNaturalNumbers(n-1);
      
